@@ -1,0 +1,13 @@
+{
+  topMenu: menus(where: { location: PRIMARY }) {
+    menu: nodes {
+      items: menuItems {
+        item: nodes {
+          id
+          label
+          url
+        }
+      }
+    }
+  }
+}

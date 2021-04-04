@@ -1,0 +1,237 @@
+body
+    background: #F4F4F4
+    font-size: 16px;
+    font-display: auto;
+    font-weight: 300;
+    line-height: 1;
+    font-family: SFProDisplay-Regular,PF Regal Text Pro,Georgia,serif;
+
+@font-face 
+  font-family: 'MuseoCyrl-Regular'
+  font-weight: normal
+  src: url('~static/fonts/MuseoCyrl-500.ttf')
+  src: url('~static/fonts/MuseoCyrl-500.woff') format('woff'),
+       url('~static/fonts/MuseoCyrl-500.otf') format('otf'),
+       url('~static/fonts/MuseoCyrl-500.eot') format('eot')
+
+@font-face 
+  font-family: 'MuseoCyrl-Medium'
+  font-weight: normal
+  src: url('~static/fonts/MuseoCyrl-700.ttf')
+  src: url('~static/fonts/MuseoCyrl-700.woff') format('woff'),
+       url('~static/fonts/MuseoCyrl-700.otf') format('otf'),
+       url('~static/fonts/MuseoCyrl-700.eot') format('eot')
+
+@font-face 
+  font-family: 'MuseoCyrl-Bold'
+  font-weight: normal
+  src: url('~static/fonts/MuseoCyrl-900.ttf')
+  src: url('~static/fonts/MuseoCyrl-900.woff') format('woff'),
+       url('~static/fonts/MuseoCyrl-900.otf') format('otf'),
+       url('~static/fonts/MuseoCyrl-900.eot') format('eot')
+
+@font-face 
+  font-family: 'SFProDisplay-Regular'
+  font-weight: normal
+  src: url('~static/fonts/SFProDisplay-Regular.ttf')
+  src: url('~static/fonts/SFProDisplay-Regular.woff') format('woff'),
+       url('~static/fonts/SFProDisplay-Regular.eot') format('eot')
+
+@font-face 
+  font-family: 'Montserrat-Regular'
+  font-weight: normal
+  src: url('~static/fonts/Montserrat-Regular.ttf')
+  src: url('~static/fonts/Montserrat-Regular.woff') format('woff'),
+       url('~static/fonts/Montserrat-Regular.otf') format('otf'),
+       url('~static/fonts/Montserrat-Regular.eot') format('eot')
+
+@font-face 
+  font-family: 'Montserrat-Bold'
+  font-weight: normal
+  src: url('~static/fonts/Montserrat-Bold.ttf')
+  src: url('~static/fonts/Montserrat-Bold.woff') format('woff'),
+       url('~static/fonts/Montserrat-Bold.otf') format('otf'),
+       url('~static/fonts/Montserrat-Bold.eot') format('eot')
+
+@font-face 
+  font-family: 'Montserrat-ExtraBold'
+  font-weight: normal
+  src: url('~static/fonts/Montserrat-ExtraBold.ttf')
+  src: url('~static/fonts/Montserrat-ExtraBold.woff') format('woff'),
+       url('~static/fonts/Montserrat-ExtraBold.otf') format('otf'),
+       url('~static/fonts/Montserrat-ExtraBold.eot') format('eot')
+
+a, a:active, a:focus, a:hover, a:visited 
+    text-decoration: none
+
+h1, h2, h3, h4, h5, h6 
+    margin: 0
+    padding: 0
+    font-weight: 400
+
+p
+    font-size: 18px;
+    line-height: 28px;
+
+figure, blockquote 
+    margin: 0
+
+.container 
+    margin: 0 auto
+    max-width: 1182px
+    width: 100%
+.container__second
+    margin: 0 auto
+    max-width: 796px
+.post__title-h1
+    font-size: 34px
+    line-height: 40px
+.post__title-h2
+    font-size: 24px
+    line-height: 28px
+    transition: 0.35s all
+.post__title-h2, .post__title-h1, .title-style-all
+    font-family: 'Montserrat-ExtraBold'
+    color: #25282B
+.articles__title-type-3 
+    font-size: 26px
+    line-height: 38px
+    text-shadow: 0 4px 4px rgba(0,0,0,.5);
+    text-align: center
+.articles__title-second-3 p
+    display: inline
+    font-family: 'Montserrat-Regular'
+    font-size: 30px
+.articles__title-type-4 
+    font-size: 36px
+    line-height: 44px
+.header-nav__item-active
+    color: #ffffff
+.header__logo .header-nav__item-active
+    border: 0
+    display: flex
+.articles__post:hover .post__picture-image-type-3
+    transform: scale(1.06)
+.articles__post:hover .post__picture-image-type-2
+    transform: translateX(-50%) scale(1.06)
+.articles__post:hover .post__picture-image
+    transform: scale(1.04)
+.before-enter
+  opacity: 0
+  transform: translateY(63px)
+  transition: all 1.3s cubic-bezier(.07,.78,.66,1)
+.enter
+  opacity: 1
+  transform: translateY(0px)
+.leave
+  opacity: 1
+  transform: translateY(0px)
+.page-leave-active
+  opacity: 0
+  transform: translateY(33px)
+  transition: all 0.2s cubic-bezier(.07,.78,.67,.81)
+
+.page__header
+  padding-top: 16px
+  padding-bottom: 24px
+  z-index: 1
+  position: relative
+.page__title-h1
+  font-size: 48px
+  color: #ffffff
+  font-family: 'Montserrat-ExtraBold'
+
+.material-all
+  &__header
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  &__container
+    margin: 0 auto;
+    max-width: 782px;
+    position: relative;
+    z-index: 2;
+  &__tags 
+    display: flex;
+    align-items: center;
+
+.material-header-all
+  &__cat
+    color: #0da877
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 16px
+    letter-spacing: 1.5px
+    transition-delay: 0.25s
+    position: relative
+    font-family: 'MuseoCyrl-medium'
+  &__date 
+    margin-left: 16px
+    color: #ffffff
+    font-family: 'Montserrat-Regular'
+  &__title
+    color: #ffffff
+    margin-top: 24px
+  &__inf
+    position: relative
+    display: flex
+    align-items: center
+    padding-top: 8px
+    padding-bottom: 8px
+    border-top: 1px solid rgba(255, 255, 255, 0.08)
+    &-container
+      margin: 0 auto;
+      width: 100%
+      max-width: 782px;
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+.material-content-all
+  margin: 0 auto;
+  max-width: 782px;
+  position: relative;
+  &__article p
+    margin: 0 0 32px;
+    font-size: 20px;
+    line-height: 28px;
+  .material__content-heading-h3
+    font-family: 'Montserrat-ExtraBold'
+    font-size: 28px
+    line-height: 34px
+    margin-left: 0
+    margin-bottom: 32px
+    max-width: 782px
+
+.material-footer-all
+  &__inf
+    position: relative
+    display: flex
+    align-items: center
+    padding-top: 8px
+    padding-bottom: 8px
+    border-top: 1px solid rgba(37, 40, 43, 0.08)
+    border-bottom: 2px solid #25282b
+
+.wp-block-pullquote
+  padding-left: 42px
+  padding-right: 42px
+  padding-top: 48px
+  padding-bottom: 48px
+  border-top: 3px solid #25282B
+  border-bottom: 3px solid #25282B
+  margin-bottom: 64px
+  p
+    font-family: 'MuseoCyrl-medium'
+    font-style: italic
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: 0.25px
+    margin-bottom: 0
+  cite
+    font-family: 'Montserrat-Bold'
+    font-style: normal
+    font-size: 20px
+    margin-top: 16px
+    display: block
+    color: #25282B

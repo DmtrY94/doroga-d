@@ -1,0 +1,31 @@
+query getPostBySlug($post: String!) {
+  postBy(slug: $post) {
+    id
+    title
+    content
+    excerpt
+    date
+    slug
+    post_cat {
+      contentType
+      typePost
+      contentRazborImage {
+        sourceUrl(size: MEDIUM_LARGE)
+        uri
+        mediaItemUrl
+      }
+      contentRazborContent {
+        namePlan
+        numberPlan
+        titleRazborBlock
+        textRazborBlock
+        fieldGroupName
+      }
+    }
+    categories {
+      nodes {
+        name
+      }
+    } 
+  }
+}

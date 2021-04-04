@@ -1,0 +1,17 @@
+{
+  posts(where: {categoryName: "Main"})  {
+    nodes {
+      id
+      title
+      date
+      slug
+      categories {
+        nodes {
+          id
+          name
+          slug
+        }
+      } 
+    }
+  }
+}

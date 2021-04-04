@@ -1,0 +1,33 @@
+{
+  page(idType: URI, id: "glavnaya") {
+    main_page {
+      postList {
+        ... on Post {
+          id
+          title
+          uri
+          date
+          excerpt
+          featuredImage {
+            node {
+              sourceUrl(size: MEDIUM_LARGE)
+              uri
+              mediaItemUrl
+            }
+          }
+          post_cat {
+            contentType
+            typePost
+            typePost6MainNumber
+          }
+          categories {
+            nodes {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  }
+}

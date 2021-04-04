@@ -1,0 +1,37 @@
+query materials($materials: ID!, $first: Int) {
+  materials: category(idType: SLUG, id: $materials) {
+    slug
+    name
+    language {
+      code
+      slug
+    }
+    posts(first:$first) {
+      nodes {
+        id
+        title
+        uri
+        date
+        excerpt
+        featuredImage {
+          node {
+            sourceUrl(size: MEDIUM_LARGE)
+            uri
+            mediaItemUrl
+          }
+        }
+        post_cat {
+          contentType
+          typePost
+          typePost6MainNumber
+        }
+        categories {
+          nodes {
+            name
+            slug
+          }
+        }
+      }
+    }
+  }
+}
