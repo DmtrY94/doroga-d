@@ -15,7 +15,6 @@
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/pwa": "^3.3.3",
-    "@nuxtjs/eslint-module": "^2.0.0",
     "ap-style-title-case": "^1.1.2",
     "apollo-cache-inmemory": "^1.6.6",
     "apollo-client": "^2.6.10",
@@ -46,6 +45,22 @@
     "vue-lazyload": "^1.3.3",
     "vue-scrollto": "^2.20.0",
     "vue-social-sharing": "^3.0.4",
-    "vue-unique-id": "^3.2.0"
+    "vue-unique-id": "^3.2.0",
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "@bazzite/nuxt-optimized-images": "^0.4.0",
+    "@nuxtjs/date-fns": "^1.4.3",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "prettier": "^2.1.2",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^4.3.1",
+    "webp-loader": "^0.6.0"
   }
 }
