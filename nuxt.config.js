@@ -2,11 +2,12 @@ import { I18N } from './config'
 
 
 export default {
+  ssr: true,
+  target: "static",
   router: {
     linkActiveClass: 'header-nav__item-active',
   },
   // Target (https://go.nuxtjs.dev/config-target)
-  target: "static",
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
