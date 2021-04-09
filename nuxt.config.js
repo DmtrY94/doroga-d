@@ -6,7 +6,7 @@ export default {
     linkActiveClass: 'header-nav__item-active',
   },
   // Target (https://go.nuxtjs.dev/config-target)
-  target: "server",
+  target: "static",
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
